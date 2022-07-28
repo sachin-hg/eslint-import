@@ -1,0 +1,47 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true,
+      "restParams": true,
+      "impliedStrict": true,
+    }
+  },
+  "rules": {
+    "no-inner-declarations": "off",
+    "no-case-declarations": "off",
+    "no-empty": "off",
+    "react/no-unescaped-entities":"off",
+    "react/display-name": "off",
+    "no-extra-semi": "off",
+    "react/react-in-jsx-scope": "off",
+    "no-extra-boolean-cast": "off",
+    "no-const-assig":"off",
+    "react/jsx-no-duplicate-props":"off",
+    "no-prototype-builtins": "off",
+    "no-const-assign":"off",
+    "no-redeclare": "off",
+      "import/no-unused-modules": ["error", {"unusedExports": true}]
+  },
+  "plugins": ["import"],
+  "extends": [
+    "eslint:recommended"
+  ],
+  "settings": {
+    "import/resolver": {
+      "eslint-import-resolver-custom-alias": {
+        "alias": {
+          "aSrc": "./src/a",
+          "bSrc": "./src/b"
+        },
+        "extensions": [".js", ".jsx"]
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+node_modules/*
+**/build/*
+**/tests/*
+__mocks__
+**/generator-microfrontend/*
+**/generator-brahmand/*
+*.spec.js
+**/config/static/*
